@@ -1,0 +1,45 @@
+.formContainer{
+    display :flex ;
+    position:relative;
+    // height:70vw;
+    align-items: center;
+    justify-content: center;
+
+    .formulario{
+        // padding-top:45rem;
+        // padding-left:27rem;
+        // padding-bottom:2rem;
+
+        .todosCampos{
+            
+            .campo{
+                background-color:rgb(34, 34, 34);
+                color:white;
+                border-radius: 30px;
+                border:none;
+                height:35px;
+                padding: 0 20px;
+                outline: none;
+                margin-top:1rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .btnInsc{
+                
+                color:white;
+                background-color: rgb(233, 61, 61);
+                border:none; // reseta propriedade border pra evitar o padrão do button
+                height:50px;
+                line-height:25px; //centraliza verticalmente o texto do botão, põe metade que é sucesso
+                width:180px;
+                padding: 0 20px; // margem INTERNA do botão
+                cursor: pointer; //esse eu n entendi KKKKK
+                border-radius: 30px; // arredonda a borda
+                font-size: 15px;
+                outline: none;
+                margin-top:1rem;
+            }
+        }
+    }
+}

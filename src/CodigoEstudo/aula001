@@ -1,0 +1,54 @@
+import './App.css';
+import React, { useState, useEffect} from 'react';
+import {GetGitHub} from "./controller/request"
+function App() {
+
+  /*
+  const [btn, setBtn] = useState(0);
+
+  function handleOnClick(node){
+    setBtn(btn+1)
+  }
+  return (
+    <>
+      <button onClick={handleOnClick.bind(this)}>Pressione</button>
+      <p>Você clicou {btn} vezes!</p>
+    </>
+  ); 
+
+  const[field, setField] = useState("");
+
+  function handleOnChange(node){
+    console.log(node.target.value)
+    setField(node.target.value)
+  }
+
+  return(
+    <>
+      <input type="text" id="lname" name="lname" value={field} onChange = {handleOnChange.bind(this)}/>
+      <p>{field}</p>
+    </>
+  )
+  */
+
+
+  const[name, setName] = useState("");
+
+  useEffect(() =>{
+    async function apiGet(){
+
+      const res = await GetGitHub() 
+
+      setName(res.data.login)
+    }
+    apiGet()
+  })
+
+  return(
+    <>
+      <p>{name}</p>
+    </>
+  )
+}
+
+export default App;

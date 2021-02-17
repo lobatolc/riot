@@ -1,0 +1,42 @@
+.bodyKing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .bgRuinedKing {
+    overflow: hidden;
+    max-height: 750px;
+
+    .imgRuinedKing {
+      margin: -150px 0;
+      max-width: 100vw;
+    }
+  }
+
+  h1 {
+    position: absolute;
+    color:white;
+    font-size: 70px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+
+  .btnSobre {
+    position: absolute;
+    padding-top: 10rem;
+    color:white;
+    font-size: 70px;
+    .btnSobre2{
+      color:#fff;
+      background-color: rgb(233, 61, 61);
+      border:none; // reseta propriedade border pra evitar o padrão do button
+      height:50px;
+      line-height:25px; //centraliza verticalmente o texto do botão, põe metade que é sucesso
+      width:180px;
+      padding: 0 20px; // margem INTERNA do botão
+      cursor: pointer; //esse eu n entendi KKKKK
+      border-radius: 30px; // arredonda a borda
+      font-size: 15px;
+      outline: none;
+    }
+  }
+}
